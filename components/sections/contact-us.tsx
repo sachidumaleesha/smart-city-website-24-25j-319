@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row lg:gap-20">
           <div className="mx-auto flex max-w-sm flex-col justify-between gap-10">
             <div className="text-center lg:text-left">
-              <h1 className="mb-2 text-5xl font-semibold lg:mb-1 lg:text-6xl">
+              <h1 className="mb-2 text-5xl font-semibold lg:mb-1">
                 Contact Us
               </h1>
               <p className="text-muted-foreground">
@@ -65,12 +65,12 @@ const Contact = () => {
               <ul className="ml-4 list-disc">
                 <li>
                   <span className="font-bold">Phone: </span>
-                  (123) 34567890
+                  (123)-34567890
                 </li>
                 <li>
                   <span className="font-bold">Email: </span>
                   <a href="" className="underline">
-                    your-email@example.com
+                    info@smartcity.com
                   </a>
                 </li>
               </ul>

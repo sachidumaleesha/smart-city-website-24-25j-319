@@ -2,7 +2,14 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Presentation, Monitor, PieChart, FileBarChart, ClipboardList, PlayCircle } from "lucide-react";
+import {
+  Presentation,
+  Monitor,
+  PieChart,
+  FileBarChart,
+  ClipboardList,
+  PlayCircle,
+} from "lucide-react";
 import Link from "next/link";
 
 const presentations = [
@@ -53,20 +60,31 @@ const presentations = [
 export default function Presentations() {
   return (
     <section className="container mx-auto py-12">
-      <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-white">
+      <h2 className="text-center text-2xl font-semibold text-gray-900 dark:text-white tracking-wide">
         PRESENTATIONS
       </h2>
-      <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-2">
-        Explore the presentations we have delivered throughout our research journey.
+      <p className="text-center text-gray-600 dark:text-gray-300 max-w-5xl mx-auto mt-2">
+        Here you can explore the various presentations we have delivered
+        throughout our research journey. These presentations serve as crucial
+        moments for sharing our progress, concepts, and achievements with the
+        audience, including the project panel and our supervisor.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
         {presentations.map((presentation, index) => (
-          <Card key={index} className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          <Card
+            key={index}
+            className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
             <CardHeader className="flex flex-col items-center text-center">
-              <div className="bg-gray-100 dark:bg-gray-800 p-3 rounded-full">{presentation.icon}</div>
+              <div className="bg-gray-100 dark:bg-gray-800 p-3 rounded-full">
+                {presentation.icon}
+              </div>
               <CardTitle>
-                <Link href={presentation.link} className="text-lg font-semibold text-blue-600 hover:underline">
+                <Link
+                  href={presentation.link}
+                  className="text-lg font-semibold text-blue-600 hover:underline"
+                >
                   {presentation.title}
                 </Link>
               </CardTitle>

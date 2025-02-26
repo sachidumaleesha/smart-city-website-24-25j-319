@@ -49,7 +49,7 @@ const Team = () => {
         <h2 className="my-6 text-gray-700 font-semibold uppercase tracking-wide text-2xl">
           Meet our team
         </h2>
-        <p className="mb-8 max-w-3xl text-muted-foreground text-center text-slate-500 dark:text-slate-300">
+        <p className="mb-8 max-w-5xl text-muted-foreground text-center text-slate-500 dark:text-slate-300">
           Here you can get to know the dedicated and talented members of our
           research team. We are a group of passionate individuals who share a
           common goal of advancing knowledge and making a positive impact
@@ -60,7 +60,7 @@ const Team = () => {
         {guiders.map((person) => (
           <div key={person.id} className="flex flex-col items-center">
             <Avatar className="mb-4 size-20 border md:mb-5 lg:size-24">
-              <AvatarImage src={person.avatar} className="object-cover"/>
+              <AvatarImage src={person.avatar} className="object-cover" />
               <AvatarFallback>{person.name}</AvatarFallback>
             </Avatar>
             <p className="text-center font-medium">{person.name}</p>
@@ -72,7 +72,7 @@ const Team = () => {
         {members.map((person) => (
           <div key={person.id} className="flex flex-col items-center">
             <Avatar className="mb-4 size-20 border md:mb-5 lg:size-24">
-              <AvatarImage src={person.avatar} className="object-cover"/>
+              <AvatarImage src={person.avatar} className="object-cover" />
               <AvatarFallback>{person.name}</AvatarFallback>
             </Avatar>
             <p className="text-center font-medium">{person.name}</p>

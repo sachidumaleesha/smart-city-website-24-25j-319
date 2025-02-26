@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Menu, ArrowRight } from "lucide-react";
+import { Menu, ArrowRight, Building2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
@@ -24,7 +24,7 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Link href="/" className="flex items-center gap-2">
-                <Logo />
+                <Building2 />
                 <span className="text-xl font-bold">Smart City</span>
               </Link>
             </div>
@@ -39,7 +39,7 @@ const Header = () => {
                 )}
                 href="#"
               >
-                Home
+                Scope
               </Link>
               <Link
                 className={cn(
@@ -51,7 +51,7 @@ const Header = () => {
                 )}
                 href="#"
               >
-                Pricing
+                Milestone
               </Link>
               <Link
                 className={cn(
@@ -63,7 +63,31 @@ const Header = () => {
                 )}
                 href="#"
               >
-                Blog
+                Documents
+              </Link>
+              <Link
+                className={cn(
+                  "text-muted-foreground",
+                  navigationMenuTriggerStyle,
+                  buttonVariants({
+                    variant: "ghost",
+                  })
+                )}
+                href="#"
+              >
+                Presentations
+              </Link>
+              <Link
+                className={cn(
+                  "text-muted-foreground",
+                  navigationMenuTriggerStyle,
+                  buttonVariants({
+                    variant: "ghost",
+                  })
+                )}
+                href="#"
+              >
+                About
               </Link>
             </div>
           </div>
@@ -88,7 +112,7 @@ const Header = () => {
                       <div className="flex justify-between items-center gap-2 mt-5">
                         <div className="flex items-center gap-2">
                           <Link href="/" className="flex items-center gap-2">
-                            <Logo />
+                            <Building2 />
                             <span className="text-xl font-bold">
                               Smart City
                             </span>
@@ -100,13 +124,19 @@ const Header = () => {
                   </SheetHeader>
                   <div className="mb-8 mt-8 flex flex-col gap-4">
                     <Link href="#" className="font-semibold">
-                      Home
+                      Scope
                     </Link>
                     <Link href="#" className="font-semibold">
-                      Pricing
+                      Milestone
                     </Link>
                     <Link href="#" className="font-semibold">
-                      Blog
+                      Documents
+                    </Link>
+                    <Link href="#" className="font-semibold">
+                      Presentations
+                    </Link>
+                    <Link href="#" className="font-semibold">
+                      About
                     </Link>
                   </div>
                   <div className="border-t pt-4">
@@ -179,13 +209,13 @@ const Header = () => {
                       </Link>
                     </div>
                     <div className="mt-2 flex flex-col gap-3">
-                      <Link href="/sign-in">
-                        <Button variant="outline" className="w-full">
+                      <Link href="#">
+                        <Button variant="outline" className="w-full" disabled>
                           Log in
                         </Button>
                       </Link>
-                      <Link href="/sign-up">
-                        <Button className="group w-full">
+                      <Link href="#">
+                        <Button className="group w-full" disabled>
                           Start For Free
                           <ArrowRight
                             className="-me-1 ms-2 opacity-60 transition-transform group-hover:translate-x-0.5"

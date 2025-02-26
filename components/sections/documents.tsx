@@ -2,7 +2,14 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { FileText, FilePlus, FileCheck, Book, FileSignature, GraduationCap } from "lucide-react";
+import {
+  FileText,
+  FilePlus,
+  FileCheck,
+  Book,
+  FileSignature,
+  GraduationCap,
+} from "lucide-react";
 import Link from "next/link";
 
 const documents = [
@@ -53,20 +60,31 @@ const documents = [
 export default function Documents() {
   return (
     <section className="container mx-auto py-12">
-      <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-white">
+      <h2 className="text-center text-2xl font-semibold text-gray-900 dark:text-white tracking-wide">
         DOCUMENTS
       </h2>
-      <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-2">
-        Here you can find a collection of essential documents that provide an overview of our research projects.
+      <p className="text-center text-gray-600 dark:text-gray-300 max-w-5xl mx-auto mt-2">
+        Here you can find a collection of essential documents that provide a
+        comprehensive overview of our research projects. These documents serve
+        as valuable resources, offering insights into the objectives, plans, and
+        progress of our projects.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
         {documents.map((doc, index) => (
-          <Card key={index} className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          <Card
+            key={index}
+            className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+          >
             <CardHeader className="flex flex-col items-center text-center">
-              <div className="bg-gray-100 dark:bg-gray-800 p-3 rounded-full">{doc.icon}</div>
+              <div className="bg-gray-100 dark:bg-gray-800 p-3 rounded-full">
+                {doc.icon}
+              </div>
               <CardTitle>
-                <Link href={doc.link} className="text-lg font-semibold text-blue-600 hover:underline">
+                <Link
+                  href={doc.link}
+                  className="text-lg font-semibold text-blue-600 hover:underline"
+                >
                   {doc.title}
                 </Link>
               </CardTitle>

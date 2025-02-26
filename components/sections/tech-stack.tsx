@@ -26,12 +26,18 @@ const TechStack = () => {
     <div className="relative z-20 mt-20 mb-12">
       <div className="px-8">
         <h4 className="text-gray-700 font-semibold uppercase tracking-wide text-2xl max-w-5xl mx-auto text-center dark:text-white">
-        Tools and Technologies
+          Tools and Technologies
         </h4>
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
+        <p className="text-sm lg:text-base max-w-5xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+          Here are the tools and technologies harnessed in our project to create
+          an innovative and robust solution. From cutting-edge software to
+          state-of-the-art hardware, we integrate a diverse range of programming
+          languages, frameworks, and systems. Our comprehensive approach
+          includes leveraging advanced technologies, such as artificial
+          intelligence, IoT devices, machine learning algorithms, and more,
+          enabling us to build a secure and efficient system tailored for the
+          specific needs of the smart city.
         </p>
       </div>
 

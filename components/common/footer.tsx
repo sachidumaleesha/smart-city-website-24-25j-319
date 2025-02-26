@@ -20,8 +20,8 @@ const Footer = () => {
       <div className="container px-4 py-10 mx-auto">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Company Name</h2>
-            <p className="text-muted-foreground">Creating innovative solutions for a better tomorrow.</p>
+            <h2 className="text-2xl font-bold">Smart City</h2>
+            <p className="text-muted-foreground">AI-Powered Solutions for Smarter Urban Living.</p>
           </div>
           <div className="space-y-4 lg:col-span-2">
             <h3 className="text-lg font-semibold">Quick Links</h3>
@@ -30,19 +30,19 @@ const Footer = () => {
                 Home
               </Link>
               <Link href="#" className="hover:underline">
+                Scope
+              </Link>
+              <Link href="#" className="hover:underline">
+                Milestone
+              </Link>
+              <Link href="#" className="hover:underline">
+                Documents
+              </Link>
+              <Link href="#" className="hover:underline">
+                Presentations
+              </Link>
+              <Link href="#" className="hover:underline">
                 About
-              </Link>
-              <Link href="#" className="hover:underline">
-                Services
-              </Link>
-              <Link href="#" className="hover:underline">
-                Products
-              </Link>
-              <Link href="#" className="hover:underline">
-                Contact
-              </Link>
-              <Link href="#" className="hover:underline">
-                Blog
               </Link>
             </nav>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center justify-between gap-4 mt-8 pt-8 border-t sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Company Name. All rights reserved.
+            © {new Date().getFullYear()} Smart City. All rights reserved.
           </p>
           <div className="flex space-x-4">
             <Button variant="ghost" size="icon">
@@ -75,14 +75,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* <div className="hidden md:block relative w-full h-72">
-        <Image 
-          src="/images/footer_image.png" 
-          alt="footer-image" 
-          fill 
-          className="object-cover"
-        />
-      </div> */}
     </footer>
   )
 }
