@@ -12,8 +12,9 @@ const Footer = () => {
         <Image 
           src="/images/footer_image.png" 
           alt="footer-image" 
-          fill 
+          fill
           className="object-cover rounded-t-2xl"
+          priority
         />
       </div>
       <div className="container px-4 py-10 mx-auto">
