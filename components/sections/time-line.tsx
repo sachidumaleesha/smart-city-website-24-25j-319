@@ -31,7 +31,7 @@ const milestones = [
     color: "bg-blue-600",
   },
   {
-    date: "Jun 20, 2023",
+    date: "Mar 07, 2025",
     title: "Research Paper",
     description: "Published research findings and methodology.",
     color: "bg-teal-500",
