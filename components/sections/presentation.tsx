@@ -59,7 +59,7 @@ const presentations = [
 
 export default function Presentations() {
   return (
-    <section className="container mx-auto py-12">
+    <section className="container mx-auto py-12" id="presentations">
       <h2 className="text-center text-2xl font-semibold text-gray-900 dark:text-white tracking-wide">
         PRESENTATIONS
       </h2>

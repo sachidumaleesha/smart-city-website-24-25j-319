@@ -5,27 +5,27 @@ import { cn } from "@/lib/utils";
 
 const milestones = [
   {
-    date: "Nov 10, 2022",
+    date: "Apr 19, 2024",
     title: "Awareness Session",
     description:
       "Awareness session for the research project and, we had to select a supervisor.",
     color: "bg-slate-600",
   },
   {
-    date: "Jan 20, 2023",
+    date: "Jul 05, 2024",
     title: "Topic Evaluation",
     description: "In this stage the Topic we selected been evaluated.",
     color: "bg-yellow-400",
   },
   {
-    date: "Mar 27, 2023",
+    date: "Aug 05, 2024",
     title: "Project Proposal Presentation",
     description:
       "A project proposal is prepared to make an offer and to try to convince a supervisor or a future customer to accept it.",
     color: "bg-pink-500",
   },
   {
-    date: "May 22, 2023",
+    date: "Dec 04, 2024",
     title: "Progress Presentation 1",
     description: "In this stage we had to show our progress up to 50%.",
     color: "bg-blue-600",
@@ -52,7 +52,7 @@ const milestones = [
 
 const Timeline = () => {
   return (
-    <section className="container mx-auto px-4 py-12">
+    <section className="container mx-auto px-4 py-12" id="milestones">
       <h2 className="text-center text-2xl font-semibold tracking-wide text-gray-900 dark:text-white">
         PROJECT MILESTONES
       </h2>

@@ -1,6 +1,6 @@
 const Content = () => {
   return (
-    <div className="my-12">
+    <div className="my-12" id="scope">
       <div className="flex flex-col gap-5">
         <div>
           <h2 className="text-center text-2xl text-gray-700 font-semibold uppercase tracking-wide mb-3 dark:text-white">

@@ -7,17 +7,15 @@ import Integration from "../ui/integration";
 const TechStack = () => {
   const features = [
     {
-      title: "Watch our AI on YouTube",
-      description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+      title: "Our Core Functionality",
+      description: "Our system integrates key features for seamless data access, real-time monitoring, and AI-driven insights.",
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Deploy in seconds",
-      description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
+      title: "Technologies We Use",
+      description: "We use cutting-edge AI, cloud services, and development tools for fast, secure, and scalable deployment.",
       skeleton: <SkeletonTwo />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },

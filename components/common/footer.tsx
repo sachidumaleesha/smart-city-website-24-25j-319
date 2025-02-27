@@ -1,17 +1,17 @@
-import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import Link from "next/link";
+import { Facebook, Twitter, Instagram, Linkedin, Building2 } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { SubscribeForm } from "./subscribe-form"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { SubscribeForm } from "./subscribe-form";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="bg-background border-t border-x rounded-t-2xl">
       <div className="hidden md:block relative w-full h-72">
-        <Image 
-          src="/images/footer_image.png" 
-          alt="footer-image" 
+        <Image
+          src="/images/footer_image.png"
+          alt="footer-image"
           fill
           className="object-cover rounded-t-2xl"
           priority
@@ -20,8 +20,13 @@ const Footer = () => {
       <div className="container px-4 py-10 mx-auto">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Smart City</h2>
-            <p className="text-muted-foreground">AI-Powered Solutions for Smarter Urban Living.</p>
+            <div className="flex items-center gap-2">
+              <Building2 />
+              <h2 className="text-2xl font-bold">Smart City</h2>
+            </div>
+            <p className="text-muted-foreground">
+              AI-Powered Solutions for Smarter Urban Living.
+            </p>
           </div>
           <div className="space-y-4 lg:col-span-2">
             <h3 className="text-lg font-semibold">Quick Links</h3>
@@ -47,7 +52,9 @@ const Footer = () => {
             </nav>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Subscribe to our newsletter</h3>
+            <h3 className="text-lg font-semibold">
+              Subscribe to our newsletter
+            </h3>
             <SubscribeForm />
           </div>
         </div>
@@ -76,7 +83,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

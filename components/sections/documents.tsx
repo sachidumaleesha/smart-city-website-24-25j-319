@@ -59,7 +59,7 @@ const documents = [
 
 export default function Documents() {
   return (
-    <section className="container mx-auto py-12">
+    <section className="container mx-auto py-12" id="documents">
       <h2 className="text-center text-2xl font-semibold text-gray-900 dark:text-white tracking-wide">
         DOCUMENTS
       </h2>

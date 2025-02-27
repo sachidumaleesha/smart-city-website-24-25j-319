@@ -18,7 +18,7 @@ const HeroSection = () => {
             project.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <Button className="group w-fit" variant="secondary">
+            <Button className="group w-fit bg-green-100 hover:bg-green-200 dark:text-black" variant="secondary">
               <LayoutDashboard
                 className="-ms-1 opacity-60"
                 size={16}

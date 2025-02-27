@@ -41,7 +41,7 @@ const Solution = () => {
 
             <div className="space-y-6">
               <div>
-                <h2 className="text-2xl font-bold text-primary mb-2">
+                <h2 className="text-lg md:text-2xl font-bold text-primary mb-2">
                   Exploring the Advanced Capabilities of our Smart City System:
                   A Comprehensive Demonstration
                 </h2>

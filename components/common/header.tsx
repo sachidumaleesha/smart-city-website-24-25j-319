@@ -4,7 +4,6 @@ import * as React from "react";
 import { Menu, ArrowRight, Building2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetContent,
@@ -17,6 +16,16 @@ import { ThemeToggle } from "../ui/theme-toogle";
 import Logo from "./logo";
 
 const Header = () => {
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="py-4">
       <div className="container mx-auto">
@@ -32,60 +41,60 @@ const Header = () => {
               <Link
                 className={cn(
                   "text-muted-foreground",
-                  navigationMenuTriggerStyle,
                   buttonVariants({
                     variant: "ghost",
                   })
                 )}
-                href="#"
+                href="#scope"
+                onClick={(e) => scrollToSection(e, "scope")}
               >
                 Scope
               </Link>
               <Link
                 className={cn(
                   "text-muted-foreground",
-                  navigationMenuTriggerStyle,
                   buttonVariants({
                     variant: "ghost",
                   })
                 )}
-                href="#"
+                href="#milestones"
+                onClick={(e) => scrollToSection(e, "milestones")}
               >
                 Milestone
               </Link>
               <Link
                 className={cn(
                   "text-muted-foreground",
-                  navigationMenuTriggerStyle,
                   buttonVariants({
                     variant: "ghost",
                   })
                 )}
-                href="#"
+                href="#documents"
+                onClick={(e) => scrollToSection(e, "documents")}
               >
                 Documents
               </Link>
               <Link
                 className={cn(
                   "text-muted-foreground",
-                  navigationMenuTriggerStyle,
                   buttonVariants({
                     variant: "ghost",
                   })
                 )}
-                href="#"
+                href="#presentations"
+                onClick={(e) => scrollToSection(e, "presentations")}
               >
                 Presentations
               </Link>
               <Link
                 className={cn(
                   "text-muted-foreground",
-                  navigationMenuTriggerStyle,
                   buttonVariants({
                     variant: "ghost",
                   })
                 )}
-                href="#"
+                href="#about"
+                onClick={(e) => scrollToSection(e, "about")}
               >
                 About
               </Link>
@@ -123,19 +132,39 @@ const Header = () => {
                     </SheetTitle>
                   </SheetHeader>
                   <div className="mb-8 mt-8 flex flex-col gap-4">
-                    <Link href="#" className="font-semibold">
+                    <Link
+                      href="#scope"
+                      className="font-semibold"
+                      onClick={(e) => scrollToSection(e, "scope")}
+                    >
                       Scope
                     </Link>
-                    <Link href="#" className="font-semibold">
+                    <Link
+                      href="#milestone"
+                      className="font-semibold"
+                      onClick={(e) => scrollToSection(e, "milestone")}
+                    >
                       Milestone
                     </Link>
-                    <Link href="#" className="font-semibold">
+                    <Link
+                      href="#documents"
+                      className="font-semibold"
+                      onClick={(e) => scrollToSection(e, "documents")}
+                    >
                       Documents
                     </Link>
-                    <Link href="#" className="font-semibold">
+                    <Link
+                      href="#presentations"
+                      className="font-semibold"
+                      onClick={(e) => scrollToSection(e, "presentations")}
+                    >
                       Presentations
                     </Link>
-                    <Link href="#" className="font-semibold">
+                    <Link
+                      href="#about"
+                      className="font-semibold"
+                      onClick={(e) => scrollToSection(e, "about")}
+                    >
                       About
                     </Link>
                   </div>
