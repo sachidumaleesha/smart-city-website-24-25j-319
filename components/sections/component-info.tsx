@@ -1,7 +1,7 @@
 import { useId } from "react";
 import { SquareParking, Trash2, ShieldCheck, Car } from "lucide-react";
 
-export function ComponentInfo() {
+const ComponentInfo = () => {
   return (
     <div className="my-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-6 max-w-7xl mx-auto">
@@ -25,7 +25,9 @@ export function ComponentInfo() {
       </div>
     </div>
   );
-}
+};
+
+export default ComponentInfo;
 
 const grid = [
   {

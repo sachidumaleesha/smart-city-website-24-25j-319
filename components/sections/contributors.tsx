@@ -28,10 +28,12 @@ const people = [
   },
 ];
 
-export function ContributorPreview() {
+const ContributorPreview = () => {
   return (
     <div className="flex flex-row items-center justify-center my-12 w-full">
       <AnimatedTooltip items={people} />
     </div>
   );
-}
+};
+
+export default ContributorPreview;
