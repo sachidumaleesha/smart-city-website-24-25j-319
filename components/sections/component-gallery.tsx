@@ -51,7 +51,6 @@ export default function ComponentGallery() {
                 fill
                 style={{ objectFit: "contain" }}
                 className="rounded-lg"
-                unoptimized
                 priority
               />
             </div>
@@ -74,7 +73,6 @@ export default function ComponentGallery() {
                 alt={selectedImage.alt}
                 fill
                 className="object-contain"
-                unoptimized
                 priority
               />
             </div>
