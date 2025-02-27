@@ -5,7 +5,7 @@ import HeroVideoDialog from "../magicui/hero-video-dialog";
 const Solution = () => {
   return (
     <div>
-      <h1 className="text-center text-2xl text-gray-700 font-semibold uppercase tracking-wide mt-10 mb-3">
+      <h1 className="text-center text-2xl text-gray-700 font-semibold uppercase tracking-wide mt-10 mb-3 dark:text-white">
         Solution
       </h1>
 
