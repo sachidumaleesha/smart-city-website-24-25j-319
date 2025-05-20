@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Menu, ArrowRight, Building2 } from "lucide-react";
+import { Menu, ArrowRight, Building2, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -100,6 +100,12 @@ const Header = () => {
             </div>
           </div>
           <div className="flex gap-2 items-center">
+            <Link
+              href="https://github.com/sachidumaleesha/smart-city-website-24-25j-319"
+              target="_blank"
+            >
+              <Github size={15} className="text-black dark:text-white" />
+            </Link>
             <ThemeToggle />
           </div>
         </nav>
@@ -126,7 +132,18 @@ const Header = () => {
                             </span>
                           </Link>
                         </div>
-                        <ThemeToggle />
+                        <div className="flex items-center gap-2">
+                          <Link
+                            href="https://github.com/sachidumaleesha/smart-city-website-24-25j-319"
+                            target="_blank"
+                          >
+                            <Github
+                              size={15}
+                              className="text-black dark:text-white"
+                            />
+                          </Link>
+                          <ThemeToggle />
+                        </div>
                       </div>
                     </SheetTitle>
                   </SheetHeader>
@@ -261,6 +278,12 @@ const Header = () => {
               <span className="text-xl font-bold">Smart City</span>
             </div>
             <div className="flex items-center gap-2">
+              <Link
+                href="https://github.com/sachidumaleesha/smart-city-website-24-25j-319"
+                target="_blank"
+              >
+                <Github size={15} className="text-black dark:text-white" />
+              </Link>
               <ThemeToggle />
             </div>
           </div>
