@@ -49,9 +49,9 @@ const milestones = [
     color: "bg-gray-700",
   },
   {
-    date: "Apr 11, 2025",
+    date: "May 26, 2025",
     title: "Final Presentation and viva",
-    description: "Finalized and submitted the project.",
+    description: "Finalized and Demonstrated 100% progress.",
     color: "bg-purple-700",
   },
 ];

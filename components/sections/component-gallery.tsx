@@ -37,7 +37,7 @@ export default function ComponentGallery() {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-12" id="gridGallery">
         {images.map((image, index) => (
           <div key={index} className="flex flex-col items-center">
             <h3 className="text-lg font-semibold mb-2">{image.alt}</h3>

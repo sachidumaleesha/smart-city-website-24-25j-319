@@ -1,6 +1,33 @@
 import { useId } from "react";
 import { SquareParking, Trash2, ShieldCheck, Car } from "lucide-react";
 
+const grid = [
+  {
+    icon: ShieldCheck,
+    title: "Surveillance Enhancement",
+    description:
+      "Implement advanced surveillance systems with real-time threat detection capabilities, improving public safety through intelligent monitoring and rapid response mechanisms.",
+  },
+  {
+    icon: Trash2,
+    title: "Smart Waste Management",
+    description:
+      "Develop smart waste management solutions using computer vision for efficient sorting, collection optimization, and environmental impact reduction in urban areas.",
+  },
+  {
+    icon: Car,
+    title: "Special Accident Detection",
+    description:
+      "Create a robust system for detecting and responding to special accidents on motorways, including accidents and emergency vehicle presence, ensuring quick response times.",
+  },
+  {
+    icon: SquareParking,
+    title: "Vehicle Parking Management",
+    description:
+      "Develop an efficient system for managing vehicle parking, including real-time monitoring, automated counting, and integrated billing solutions for improved urban parking management.",
+  },
+];
+
 const ComponentInfo = () => {
   return (
     <div className="my-12">
@@ -28,33 +55,6 @@ const ComponentInfo = () => {
 };
 
 export default ComponentInfo;
-
-const grid = [
-  {
-    icon: ShieldCheck,
-    title: "Surveillance Enhancement",
-    description:
-      "Implement advanced surveillance systems with real-time threat detection capabilities, improving public safety through intelligent monitoring and rapid response mechanisms.",
-  },
-  {
-    icon: Trash2,
-    title: "Smart Waste Management",
-    description:
-      "Develop smart waste management solutions using computer vision for efficient sorting, collection optimization, and environmental impact reduction in urban areas.",
-  },
-  {
-    icon: Car,
-    title: "Special Accident Detection",
-    description:
-      "Create a robust system for detecting and responding to special accidents on motorways, including accidents and emergency vehicle presence, ensuring quick response times.",
-  },
-  {
-    icon: SquareParking,
-    title: "Vehicle Parking Management",
-    description:
-      "Develop an efficient system for managing vehicle parking, including real-time monitoring, automated counting, and integrated billing solutions for improved urban parking management.",
-  },
-];
 
 export const Grid = ({
   pattern,

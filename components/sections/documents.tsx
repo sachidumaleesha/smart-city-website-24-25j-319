@@ -1,13 +1,11 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 import {
   FileText,
   FilePlus,
   FileCheck,
   Book,
-  FileSignature,
   GraduationCap,
 } from "lucide-react";
 import Link from "next/link";
@@ -18,42 +16,42 @@ const documents = [
     description:
       "A formal, typically short document that describes the project in its entirety — including objectives and how it will be carried out.",
     icon: <FileText className="text-blue-500 size-10" />,
-    link: "/documents/project-charter",
+    link: "https://drive.google.com/drive/folders/1fU6fdelF4iCt5Xy84anVoCYypl6RDvLw?usp=sharing",
   },
   {
     title: "Project Proposal",
     description:
       "A core document that helps focus on the substance of the proposed plan, using an easy-to-follow project proposal outline.",
     icon: <FilePlus className="text-orange-500 size-10" />,
-    link: "/documents/project-proposal",
+    link: "https://drive.google.com/drive/folders/1FPvVndJ14jPzq3bJXLzxzwoI0ZBawSHL?usp=sharing",
   },
   {
-    title: "Status Document 1",
+    title: "Checklist",
     description:
-      "Describes in detail how meetings were held with teammates and what was discussed, including GitLab commits.",
+      "A list of tasks to be completed, providing details on meeting discussions and progress tracking.",
     icon: <FileCheck className="text-pink-500 size-10" />,
-    link: "/documents/status-document-1",
+    link: "https://drive.google.com/drive/folders/1Z5-PGahsVT_F5gryf6jmFYqbWvvr7yfv?usp=sharing",
   },
   {
-    title: "Status Document 2",
+    title: "Logbook",
     description:
-      "Similar to Status Document 1, providing details on meeting discussions and progress tracking.",
+      "A record of daily activities, providing details on meeting discussions and progress tracking.",
     icon: <FileCheck className="text-yellow-500 size-10" />,
-    link: "/documents/status-document-2",
+    link: "https://drive.google.com/drive/folders/1K4aOnCRpugb0UlQLCpRq0d0deOEOD4LS?usp=sharing",
   },
   {
     title: "Research Paper",
     description:
       "Academic writing based on original research, including analysis and interpretation of findings.",
     icon: <Book className="text-green-500 size-10" />,
-    link: "/documents/research-paper",
+    link: "https://drive.google.com/drive/folders/12TV-DJbaCl7cfb8Wn7R1umH30pU5H3LJ?usp=sharing",
   },
   {
     title: "Thesis",
     description:
       "A comprehensive document showcasing research findings, methodology, and expertise, contributing to academic insights.",
     icon: <GraduationCap className="text-purple-500 size-10" />,
-    link: "/documents/thesis",
+    link: "https://drive.google.com/drive/folders/1Uqj0tE9ej7Z2tA3k7MbkeFsOJ_bfUt1B?usp=sharing",
   },
 ];
 
@@ -84,6 +82,7 @@ export default function Documents() {
                 <Link
                   href={doc.link}
                   className="text-lg font-semibold text-blue-600 hover:underline"
+                  target="_blank"
                 >
                   {doc.title}
                 </Link>

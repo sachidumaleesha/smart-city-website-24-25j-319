@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import { ThemeToggle } from "../ui/theme-toogle";
-import Logo from "./logo";
 
 const Header = () => {
   const scrollToSection = (
@@ -258,7 +257,7 @@ const Header = () => {
                   </div>
                 </SheetContent>
               </Sheet>
-              <Logo />
+              <Building2 />
               <span className="text-xl font-bold">Smart City</span>
             </div>
             <div className="flex items-center gap-2">

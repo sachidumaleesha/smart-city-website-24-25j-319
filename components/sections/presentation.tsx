@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 import {
   Presentation,
   Monitor,
@@ -18,42 +17,42 @@ const presentations = [
     description:
       "In this presentation, our group presented our concept to the panel as well as our supervisor.",
     icon: <Presentation className="text-green-500 size-10" />,
-    link: "/presentations/proposal",
+    link: "https://drive.google.com/drive/folders/1K2gmUKkUn5ZER_-HtuF5juM7SuX1hcSF?usp=sharing",
   },
   {
     title: "Progress Presentation 1",
     description:
       "The presentation we developed to demonstrate our system's 50% progress.",
     icon: <Monitor className="text-orange-500 size-10" />,
-    link: "/presentations/progress-1",
+    link: "https://drive.google.com/drive/folders/14qoXHwrVbc-NZ9uyLQgLcmqqko0voxg9?usp=sharing",
   },
   {
     title: "Progress Presentation 2",
     description:
       "The presentation we developed to demonstrate our system's 90% development and the achievements we made.",
     icon: <PieChart className="text-pink-500 size-10" />,
-    link: "/presentations/progress-2",
+    link: "https://drive.google.com/drive/folders/1HmOKg6syAnXjn8i_taXDv7N3DMks-ZTX?usp=sharing",
   },
   {
     title: "Final Presentation",
     description:
       "The presentation we developed to demonstrate our system's 100% development and the achievements we made.",
     icon: <FileBarChart className="text-yellow-500 size-10" />,
-    link: "/presentations/final",
+    link: "https://drive.google.com/drive/folders/1ig-clbyg9to9Y6MV8CCwF_aZIIX0Sl4i?usp=sharing",
   },
   {
     title: "Poster",
     description:
       "An informative and visually engaging snapshot of the research project, highlighting objectives, methods, and findings.",
     icon: <ClipboardList className="text-blue-500 size-10" />,
-    link: "/presentations/poster",
+    link: "https://drive.google.com/drive/folders/1qQnDht07NBSzu549MREXI_-dmiKHLp1o?usp=sharing",
   },
   {
     title: "Demo",
     description:
       "A live demonstration showcasing the fully functional system, highlighting its features and real-life capabilities.",
     icon: <PlayCircle className="text-purple-500 size-10" />,
-    link: "/presentations/demo",
+    link: "https://drive.google.com/drive/folders/1Nbr_p8hrp8UZhx3gXbYjoV9W3Ml7T7QQ?usp=sharing",
   },
 ];
 
@@ -84,6 +83,7 @@ export default function Presentations() {
                 <Link
                   href={presentation.link}
                   className="text-lg font-semibold text-blue-600 hover:underline"
+                  target="_blank"
                 >
                   {presentation.title}
                 </Link>
